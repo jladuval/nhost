@@ -1,5 +1,15 @@
 # @nhost/react
 
+## 0.5.8
+
+### Patch Changes
+
+- 49545c0: Remove filtering of `useLayoutEffect` from logs
+  The `suppressConsoleMessage` method was meant to suppress incorrect `useLayoutEffect` messages raised on Nextjs server-side renderings. Its implementation had an impact on the normal functionning of logging (see [#447](https://github.com/nhost/nhost/issues/447)).
+  This filtering was necessary when using former versions of xstate and can now be removed.
+- Updated dependencies [d49b837]
+  - @nhost/nhost-js@1.1.5
+
 ## 0.5.7
 
 ### Patch Changes

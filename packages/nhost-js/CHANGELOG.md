@@ -1,5 +1,14 @@
 # @nhost/nhost-js
 
+## 1.1.5
+
+### Patch Changes
+
+- d49b837: Rename `autoLogin` to `autoSignIn`, and deprecate `autoLogin`
+  Thourought Nhost, we use the term `sign in` rather than `login`. This version reflect this terminology in the `NhostClient` options
+- Updated dependencies [d49b837]
+  - @nhost/hasura-auth-js@1.0.16
+
 ## 1.1.4
 
 ### Patch Changes
